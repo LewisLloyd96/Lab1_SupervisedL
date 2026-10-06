@@ -1,7 +1,7 @@
 # Supervised Learning: Rat, Dog, or Lion?
 **Author:** <<Lloyd Lewis>>
 **Course:** CAP 4620 Artificial Intelligence, Florida A&M University
-**Date:** <<Date>>
+**Date:** <<October 6, 2026>>
 **Environment:** NRP JupyterHub, Python 3 (ipykernel)
 ## Project Description
 This project shows how supervised learning works. A model is trained on
@@ -57,12 +57,10 @@ model = joblib.load("models/decision_tree.joblib")
 ![Confusion matrix](figures/03_confusion_matrix.png)
 *Rows = true animal, columns = predicted animal. Most confused classes: <<...>>.*
 ## Discussion
-1. **Why do we need labels?** <<your answer>>
-2. **What would the model predict for a cat, and why is that a problem?** <<your
-answer>>
-3. **Which feature did the tree use first, and why?** <<your answer>>
-4. **How does `max_depth` affect accuracy?** <<compare depth 1 with a larger
-depth>>
+1. **Why do we need labels?** <<Labels tell the model what each training example represents. In this project, the labels identify whether an animal is a Rat, Dog, or Lion. The model uses these known examples to learn patterns between the animal features and their class. Without labels, the model would not know which category each example belongs to or what it should predict for new data.>>
+2. **What would the model predict for a cat, and why is that a problem?** <<The model would most likely classify a cat as a Rat, Dog, or Lion because those are the only classes it was trained to recognize. A cat is not one of the available labels, so the model cannot identify it as a separate class. This shows why a supervised learning model can only make predictions based on the categories represented in its training data.>>
+3. **Which feature did the tree use first, and why?** <<The tree used the feature that provided the strongest separation between the animal classes as its first split. For this dataset, weight is likely to be the most useful feature because rats, dogs, and lions have large differences in body weight. This allows the decision tree to separate the classes with fewer decisions.>>
+4. **How does `max_depth` affect accuracy?** <<A smaller max_depth limits how many decisions the tree can make. At a depth of 1, the model can make only one main split, which may not be enough to correctly separate all three animal classes. A larger depth gives the tree more opportunities to separate the classes and can improve accuracy. However, making the tree too deep can cause it to memorize the training data instead of learning patterns that generalize well to new animals. The goal is to use enough depth to make accurate predictions without making the model unnecessarily complex.>>
 ## How to Run
 1. Open the project on the NRP JupyterHub.
 2. Open `SupervisedL.ipynb` and choose **Run → Run All Cells**.
