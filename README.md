@@ -68,6 +68,3 @@ model = joblib.load("models/decision_tree.joblib")
 ## Requirements
 `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `joblib`
 ````
-> 💡 The image links in the README use **relative paths** (`figures/...`). They work
-because `README.md` is in the same folder as `figures/`. Do not use paths like
-`/home/jovyan/...`, since they break on GitHub and on other computers.
