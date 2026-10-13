@@ -7,8 +7,7 @@
 This project shows how supervised learning works. A model is trained on
 animals whose answers (labels) we already know, and then it predicts the
 label of animals it has never seen.
-![Supervised learning diagram](/Users/lloydlewis/AI Class/Lab1_SupervisedL/figures/00_supervised_learning_diagram.png)
-## Project Structure
+![Supervised learning diagram](figures/00_supervised_learning_diagram.png)## Project Structure
 ```
 Lab1_SupervisedL/
 ├── data/ # generated datasets and predictions (CSV)
