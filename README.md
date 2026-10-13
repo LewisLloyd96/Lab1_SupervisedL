@@ -1,7 +1,7 @@
 # Supervised Learning: Rat, Dog, or Lion?
-**Author:** <<Lloyd Lewis>>
+**Author:** Lloyd Lewis
 **Course:** CAP 4620 Artificial Intelligence, Florida A&M University
-**Date:** <<October 6, 2026>>
+**Date:** October 6, 2026
 **Environment:** NRP JupyterHub, Python 3 (ipykernel)
 ## Project Description
 This project shows how supervised learning works. A model is trained on
@@ -25,7 +25,7 @@ with 50 examples per animal class.
 | `weight_kg` | body weight in kilograms |
 | `height_cm` | shoulder height in centimeters |
 | `tail_to_body` | tail length divided by body length |
-**Label:** `animal` (<<list the classes, e.g. Rat, Dog, Lion, spider>>)
+**Label:** `animal` (list the classes, e.g. Rat, Dog, Lion, spider)
 | File | Description |
 |---|---|
 | `data/animals_full.csv` | all generated animals (features + label) |
@@ -49,7 +49,7 @@ import joblib
 model = joblib.load("models/decision_tree.joblib")
 ```
 ## Results
-**Test accuracy:** <<100%>>
+**Test accuracy:** 100%
 ![Labeled data](figures/01_labeled_data_scatter.png)
 *Each dot is an animal. The classes sit in different regions of the plot.*
 ![Decision tree](figures/02_decision_tree.png)
